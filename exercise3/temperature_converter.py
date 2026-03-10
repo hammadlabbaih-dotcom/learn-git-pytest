@@ -18,7 +18,8 @@ def celsius_to_fahrenheit(celsius: Temperature) -> float:
         Temperature in Fahrenheit (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    fahrenheint=celsius*9/5+32
+    return round(fahrenheint,2) #round(..., 2) signifie arrondir à 2 chiffres après la virgule.
 
 
 def fahrenheit_to_celsius(fahrenheit: Temperature) -> float:
@@ -34,7 +35,9 @@ def fahrenheit_to_celsius(fahrenheit: Temperature) -> float:
         Temperature in Celsius (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    Celsius= (F-32)*5/9
+    return round(Celsius,2)
+
 
 
 def celsius_to_kelvin(celsius: Temperature) -> float:
@@ -50,7 +53,9 @@ def celsius_to_kelvin(celsius: Temperature) -> float:
         Temperature in Kelvin (rounded to 2 decimal places)
     """
     # TODO: Implement this function
-    pass
+    Kelvin=celsius+273.15
+    return round(Kelvin,2)
+
 
 
 def kelvin_to_celsius(kelvin: Temperature) -> float:
@@ -69,4 +74,5 @@ def kelvin_to_celsius(kelvin: Temperature) -> float:
         ValueError: If kelvin is less than 0 (below absolute zero)
     """
     # TODO: Implement this function
-    pass
+    Celsius=kelvin-273,15
+    return round(Celsius,2)
